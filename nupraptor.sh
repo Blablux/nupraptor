@@ -31,6 +31,5 @@ fi
 
 mkdir -p $scriptpath/temp
 
-echo "xsltproc movie.xsl $1 > $scriptpath/temp/movies.csv"
-echo "xsltproc serie.xsl $1 > $scriptpath/temp/series.csv"
-
+xsltproc movie.xsl $1 > $scriptpath/temp/movies.csv
+xsltproc series.xsl $1 > $scriptpath/temp/series.csv
