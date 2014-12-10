@@ -31,4 +31,6 @@ fi
 
 mkdir -p $scriptpath/temp
 
-xsltproc moviedb.xsl $1 -o $scriptpath/temp/movies.csv
+echo "xsltproc movie.xsl $1 > $scriptpath/temp/movies.csv"
+echo "xsltproc serie.xsl $1 > $scriptpath/temp/series.csv"
+
