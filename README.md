@@ -1,16 +1,15 @@
 #nupraptor
 
-**nupraptor** is a simple project aimed at exporting your xbmc/kodi movies/tvshows database to an online service like google sheets.
+**nupraptor** is a simple project aimed at exporting your xbmc/kodi movies/tvshows database as a simple csv file, and possibly to an online service like google sheets (this part won't come anytime soon though).
 
 ##What it does right now
-Not much at the moment, it's still a work in progress...
+It uses *xsltproc* to create two csv files : one for movies, the other for TV shows
 
 ##What it needs right now
-Not much either.  
-Though it relies on the single file export of xbmc/kodi to do the extraction, and uses XSLT to extract and convert the database into CSV.
+It needs *xsltproc* to apply xslt to the video database. *xsltproc* is a standard package in most unix systems.
 
-##Goals
-At its best, it should be able to convert any given database, and export it to an online service.
-It aims to be easily customisable, because everyone has different needs.
-For the moment, I only plan to send to google sheets (and use CSV as a conversion format). Feel free to drop a commit to add another service.
-
+##Usage
+Export your XBMC / Kodi database as a single file
+chmod the script as executable, then run :
+    ./nupraptor.sh (dbfile)
+CSV files are created in the same folder as the database file.
