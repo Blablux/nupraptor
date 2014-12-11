@@ -11,5 +11,7 @@ It needs *xsltproc* to apply xslt to the video database. *xsltproc* is a standar
 ##Usage
 Export your XBMC / Kodi database as a single file
 chmod the script as executable, then run :
-    ./nupraptor.sh (dbfile)
+
+ ```./nupraptor.sh (dbfile)```
+
 CSV files are created in the same folder as the database file.
