@@ -14,7 +14,10 @@
     <xsl:text>;</xsl:text>
     <xsl:value-of select="episode"/>
     <xsl:text>;</xsl:text>
-    <xsl:value-of select="season"/>
+    <xsl:for-each select="episodedetails/season">
+      <xsl:sort select="." data-type="number" order="descending"/>
+      <xsl:if test="position() = 1"><xsl:value-of select="."/></xsl:if>
+    </xsl:for-each>
     <xsl:text>&#10;</xsl:text>
   </xsl:for-each>
 </xsl:template>
