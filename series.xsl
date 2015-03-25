@@ -10,7 +10,10 @@
     <xsl:text>;</xsl:text>
     <xsl:value-of select="year"/>
     <xsl:text>;</xsl:text>
-    <xsl:value-of select="genre"/>
+    <xsl:for-each select="genre">
+      <xsl:if test="not(position()=1)">/</xsl:if>
+      <xsl:value-of select="."/>
+    </xsl:for-each>
     <xsl:text>;</xsl:text>
     <xsl:value-of select="episode"/>
     <xsl:text>;</xsl:text>
