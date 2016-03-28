@@ -1,18 +1,17 @@
-#nupraptor
+#Nupraptor
 
-**nupraptor** is a simple project aimed at exporting your xbmc/kodi movies/tvshows database as a simple csv file.
+Nupraptor is collection of small shell scripts that do various things.
 
-##What it does right now
-It uses *xsltproc* to create two csv files : one for movies, the other for TV shows
+The scripts are more a sandbox for me to (re)learn Shell programming.
 
-##What it needs right now
-It needs *xsltproc* to apply xslt to the video database. *xsltproc* is a standard package in most unix systems.
+## Scripts list
+- `kodidb.sh` is a script that exports a [Kodi](https://kodi.tv) database to
+  two csv files, one for movies and one for TV shows.  
+  This script can take two parameters :
+  - The database path (_required_)
+  - The output directory (_optional, defaults to script directory_)
 
-##Usage
-Export your XBMC / Kodi database as a single file
 
-chmod the script as executable, then run :
+## Side Note
 
- ```./nupraptor.sh (dbfile)```
-
-CSV files are created in the same folder as the database file.
+Nupraptor is the guardian of the pillar of _Mind_ and a NPC from the video games serie [Legacy of Kain](https://en.wikipedia.org/wiki/Legacy_of_Kain).
