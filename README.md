@@ -1,6 +1,6 @@
 #Nupraptor
 
-Nupraptor is collection of small shell scripts that do various things.
+Nupraptor is a collection of small shell scripts that do various things.
 
 The scripts are more a sandbox for me to (re)learn Shell programming.
 
