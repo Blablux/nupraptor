@@ -10,6 +10,9 @@ These scripts are more a sandbox for me to (re)learn Shell programming.
   This script can take two parameters :
   - The database path (_required_)
   - The output directory (_optional, defaults to script directory_)
+- `mailsrv_backup.sh` is a script that copies, archive and rsync config files
+  from a mailserver.  
+  This script takes no parameters.
 
 ## Side Note
 
