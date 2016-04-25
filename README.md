@@ -2,7 +2,7 @@
 
 Nupraptor is a collection of small shell scripts that do various things.
 
-The scripts are more a sandbox for me to (re)learn Shell programming.
+These scripts are more a sandbox for me to (re)learn Shell programming.
 
 ## Scripts list
 - `kodidb.sh` is a script that exports a [Kodi](https://kodi.tv) database to

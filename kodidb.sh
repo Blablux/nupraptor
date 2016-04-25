@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# ==============================================
 # Export a Kodi video database to csv
 # First argument is the path to the database
-# Second argument (optional) is the output directory path. If unused, the database path will be used instead
+# Second argument (optional) is the output directory path. If unused, the
+# database path will be used instead
+# ==============================================
 
 function senderror()
 {
