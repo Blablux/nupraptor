@@ -14,6 +14,10 @@ These scripts are more a sandbox for me to (re)learn Shell programming.
   from a mailserver.  
   This script takes no parameters. It relies on standard path for postfix,
   dovecot, spamassassin and others.
+- `websrv_backup.sh` is a script that copies, archives and rsync config files
+  from a webserver.  
+  This script takes no parameters. It relies on standard path for nginx, php
+  and others.
 
 ## Side Note
 
