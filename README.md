@@ -18,6 +18,9 @@ These scripts are more a sandbox for me to (re)learn Shell programming.
   from a webserver.  
   This script takes no parameters. It relies on standard path for nginx, php
   and others.
+- `clonepi.sh` is a script ultimately designed to replace the specific server
+  backup script. It makes a full copy of the SD card to a remote storage,
+  allowing for a quick reinstallation.
 
 ## Side Note
 
