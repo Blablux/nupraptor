@@ -45,4 +45,4 @@ dd bs=4M if=$LOCAL_STORAGE | gzip > $REMOTE_STORAGE/$HOST/$HOST.$TIMESTAMP.img.g
 # 3.3. Post-process
 # ==============================================
 # TODO: Finished scripts
-cat /tmp/output.txt mail -s "$HOSTNAME backup report" $CONTACT
+cat /tmp/output.txt | mail -s "$HOSTNAME backup report" $CONTACT
