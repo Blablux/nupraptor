@@ -18,7 +18,7 @@
 # 1. Setting variables (change to your taste)
 # ==============================================
 LOCAL_STORAGE="/dev/mmcblk0"
-REMOTE_STORAGE="/path/to/remote/storage/"
+REMOTE_STORAGE="/path/to/remote/storage"
 TIMESTAMP="$(date +"%Y%m%d")"
 HOST="$(hostname)"
 CONTACT="root@example.com"
