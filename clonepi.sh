@@ -32,17 +32,20 @@ CONTACT="root@example.com"
 # 3.1. Testing remote storage
 # ==============================================
 if [ ! -d "$REMOTE_STORAGE" ]; then
-    exit $REMOTE_STORAGE " can't be read!"
-fi
+    CONTENT="$REMOTE_STORAGE  can't be read!"
+else
 
 # ==============================================
 # 3.2. Cloning
 # ==============================================
-dd bs=4M if=$LOCAL_STORAGE | gzip > $REMOTE_STORAGE/$HOST/$HOST.$TIMESTAMP.img.gz 2> /tmp/output.txt
-  # DEBUG: echo dd bs=4M if="$LOCAL_STORAGE" | gzip > "$REMOTE_STORAGE"/"$HOST"."$TIMESTAMP".img.gz 2> /tmp/output.txt
+    dd bs=4M if=$LOCAL_STORAGE | gzip > $REMOTE_STORAGE/$HOST/$HOST.$TIMESTAMP.img.gz
+    # DEBUG: echo dd bs=4M if="$LOCAL_STORAGE" | gzip > "$REMOTE_STORAGE"/"$HOST"."$TIMESTAMP".img.gz
+    COUNT=$(find .. -maxdepth 1 -type f|wc -l)
+    FILESIZE=$(stat --printf="%s" "$REMOTE_STORAGE/$HOST/$HOST.$TIMESTAMP.img.gz")
+    CONTENT="Card saved as $HOST.$TIMESTAMP.img.gz\nBackup size is $FILESIZE\n$COUNT backups archived"
+fi
 
 # ==============================================
 # 3.3. Post-process
 # ==============================================
-# TODO: Finished scripts
-cat /tmp/output.txt | mail -s "$HOSTNAME backup report" $CONTACT
+echo $CONTENT | mail -s "$HOSTNAME backup report" $CONTACT
