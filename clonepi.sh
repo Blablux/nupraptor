@@ -32,7 +32,7 @@ CONTACT="root@example.com"
 # 3.1. Testing remote storage
 # ==============================================
 if [ ! -d "$REMOTE_STORAGE" ]; then
-    CONTENT="$REMOTE_STORAGE  can't be read!"
+    CONTENT="$REMOTE_STORAGE  can't be read!\nBackup canceled (until WOL implemented)"
 else
 
 # ==============================================
